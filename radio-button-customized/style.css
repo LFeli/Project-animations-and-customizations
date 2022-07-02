@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple: #8971EA;
+    --grey: #2F2F2F;
+
+    --font-style:'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--grey);
+    color: white;
+    font: 400 1rem var(--font-style);
+    -webkit-font-smoothing: antialiased;
+
+    min-height: 100vh;
+    min-width: 100vw;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.radio-component{
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+}
