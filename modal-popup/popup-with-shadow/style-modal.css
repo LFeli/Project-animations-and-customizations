@@ -1,0 +1,82 @@
+#modal .popup , #modal #shadow{
+    display: none;
+}
+
+#modal.show .popup , #modal.show #shadow{
+    display: block;
+}
+
+
+/* ------- stylization popup ------ */
+
+#modal.show .popup{
+    content: '';
+
+    width: 327px;
+    height: 300px;
+
+    background-color: #313131;
+    color: #FAFAFA;
+    border-radius: 12px;
+
+    position: fixed;
+    top: calc(50% - 165px);
+    left: calc(50% - 165px);
+    z-index: 10;
+}
+
+#modal.show .material-symbols-outlined{
+    height: 32px;
+    width: 32px;
+    color: #5D49AF;
+
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-left: 90%;
+    margin-bottom: 1rem;
+}
+
+#modal.show .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    text-align: center;
+}
+
+#modal.show #shadow{
+    content: '';
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(37, 37, 37, 0.5);
+    backdrop-filter: blur(1px);
+
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+#modal.show .message{
+    color: #5D49AF;
+}
+
+.message a{
+    color: #5D49AF;
+}
+
+.message a:hover{
+    color: #FAFAFA;
+    transition: 0.3s;
+}
+
+@media (min-width: 767px){
+    #modal.show .popup{
+        width: 394px;
+        height: 300px;
+    }
+}
